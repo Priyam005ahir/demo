@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA — modern fashion and lifestyle store.">
+  <title>NOVA — Modern E-Commerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Announcement -->
+  <div class="announcement">
+    <p>Free shipping on orders over $75</p>
+    <a href="shop.html">Shop the latest collection <span>→</span></a>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="logo">NOVA<span>.</span></a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?cat=men">Men</a>
+        <a href="shop.html?cat=women">Women</a>
+        <a href="shop.html?cat=accessories">Accessories</a>
+        <a href="shop.html?cat=sale" class="sale-link">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search" id="searchBtn">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+        </button>
+        <button class="icon-btn desktop-only" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"></path></svg>
+        </button>
+        <a class="cart-btn" aria-label="Shopping cart" href="cart.html">
+          <svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.5L20 8H6"></path><circle cx="10" cy="19" r="1.2"></circle><circle cx="17" cy="19" r="1.2"></circle></svg>
+          <span class="cart-count">0</span>
+        </a>
+        <button class="menu-btn" aria-label="Open menu" id="menuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?cat=men">Men</a>
+      <a href="shop.html?cat=women">Women</a>
+      <a href="shop.html?cat=accessories">Accessories</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-panel" id="searchPanel">
+    <div class="search-inner">
+      <input type="search" id="searchInput" placeholder="Search products..." aria-label="Search products">
+      <button id="closeSearch" aria-label="Close search">×</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="new">
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow">NEW COLLECTION · 2026</p>
+          <h1>Style that<br><em>moves</em> with you.</h1>
+          <p class="hero-text">Elevated essentials designed for everyday confidence. Discover our newest collection.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-dark">Shop collection <span>→</span></a>
+            <a href="#categories" class="text-link">Explore categories</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span>01 / 03</span>
+          <div class="slider-lines"><i class="active"></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>Free delivery</strong><span>On orders over $75</span></div>
+        <div><strong>Easy returns</strong><span>30-day return policy</span></div>
+        <div><strong>Secure payment</strong><span>100% protected checkout</span></div>
+        <div><strong>Member benefits</strong><span>Exclusive early access</span></div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section container" id="categories">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP BY CATEGORY</p>
+          <h2>Find your everyday essential.</h2>
+        </div>
+        <a href="shop.html" class="text-link">View all <span>→</span></a>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card category-large" id="men" href="shop.html?cat=men">
+          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1200&q=85" alt="Men's fashion">
+          <div class="category-overlay"><span>01</span><h3>Men</h3><p>Explore collection →</p></div>
+        </a>
+        <a class="category-card" id="women" href="shop.html?cat=women">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85" alt="Women's fashion">
+          <div class="category-overlay"><span>02</span><h3>Women</h3><p>Explore collection →</p></div>
+        </a>
+        <a class="category-card" id="accessories" href="shop.html?cat=accessories">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85" alt="Accessories">
+          <div class="category-overlay"><span>03</span><h3>Accessories</h3><p>Explore collection →</p></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CURATED FOR YOU</p>
+            <h2>Featured products.</h2>
+          </div>
+          <div class="filter-tabs" role="tablist">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="men">Men</button>
+            <button class="filter" data-filter="women">Women</button>
+            <button class="filter" data-filter="accessories">Accessories</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Product 1 -->
+          <article class="product-card" data-category="men" data-name="Essential Overshirt">
+            <div class="product-image">
+              <span class="badge">NEW</span>
+              <button class="heart" aria-label="Add Essential Overshirt to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85" alt="Essential overshirt">
+              <button class="quick-add" data-product="Essential Overshirt">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Men · Outerwear</p><h3>Essential Overshirt</h3>
+              <div class="price"><strong>$89</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="women" data-name="Minimal Knit Top">
+            <div class="product-image">
+              <span class="badge sale">-20%</span>
+              <button class="heart" aria-label="Add Minimal Knit Top to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=85" alt="Minimal knit top">
+              <button class="quick-add" data-product="Minimal Knit Top">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Women · Tops</p><h3>Minimal Knit Top</h3>
+              <div class="price"><strong>$64</strong><del>$80</del></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="men" data-name="Studio Sneakers">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Studio Sneakers to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Studio sneakers">
+              <button class="quick-add" data-product="Studio Sneakers">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Unisex · Footwear</p><h3>Studio Sneakers</h3>
+              <div class="price"><strong>$120</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accessories" data-name="Everyday Leather Bag">
+            <div class="product-image">
+              <span class="badge">BESTSELLER</span>
+              <button class="heart" aria-label="Add Everyday Leather Bag to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85" alt="Leather bag">
+              <button class="quick-add" data-product="Everyday Leather Bag">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Accessories · Bags</p><h3>Everyday Leather Bag</h3>
+              <div class="price"><strong>$145</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="women" data-name="Relaxed Linen Shirt">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Relaxed Linen Shirt to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=85" alt="Linen shirt">
+              <button class="quick-add" data-product="Relaxed Linen Shirt">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Women · Shirts</p><h3>Relaxed Linen Shirt</h3>
+              <div class="price"><strong>$72</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accessories" data-name="Classic Timepiece">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Classic Timepiece to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Classic watch">
+              <button class="quick-add" data-product="Classic Timepiece">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Accessories · Watches</p><h3>Classic Timepiece</h3>
+              <div class="price"><strong>$180</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="men" data-name="Everyday Tee">
+            <div class="product-image">
+              <span class="badge sale">-15%</span>
+              <button class="heart" aria-label="Add Everyday Tee to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Everyday t-shirt">
+              <button class="quick-add" data-product="Everyday Tee">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Men · T-Shirts</p><h3>Everyday Tee</h3>
+              <div class="price"><strong>$42</strong><del>$49</del></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="women" data-name="City Shoulder Bag">
+            <div class="product-image">
+              <button class="heart" aria-label="Add City Shoulder Bag to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85" alt="Shoulder bag">
+              <button class="quick-add" data-product="City Shoulder Bag">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Women · Bags</p><h3>City Shoulder Bag</h3>
+              <div class="price"><strong>$110</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accessories" data-name="Aero Sunglasses">
+            <div class="product-image">
+              <span class="badge">NEW</span>
+              <button class="heart" aria-label="Add Aero Sunglasses to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85" alt="Sunglasses">
+              <button class="quick-add" data-product="Aero Sunglasses">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Accessories · Eyewear</p><h3>Aero Sunglasses</h3>
+              <div class="price"><strong>$58</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="men" data-name="Urban Hoodie">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Urban Hoodie to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="Urban hoodie">
+              <button class="quick-add" data-product="Urban Hoodie">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Men · Knitwear</p><h3>Urban Hoodie</h3>
+              <div class="price"><strong>$78</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="women" data-name="Modern Denim">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Modern Denim to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85" alt="Modern denim jeans">
+              <button class="quick-add" data-product="Modern Denim">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Women · Denim</p><h3>Modern Denim</h3>
+              <div class="price"><strong>$96</strong></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accessories" data-name="Daily Backpack">
+            <div class="product-image">
+              <button class="heart" aria-label="Add Daily Backpack to wishlist">♡</button>
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85" alt="Daily backpack">
+              <button class="quick-add" data-product="Daily Backpack">Quick add</button>
+            </div>
+            <div class="product-info">
+              <p>Accessories · Bags</p><h3>Daily Backpack</h3>
+              <div class="price"><strong>$84</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer container" id="sale">
+      <div class="offer-copy">
+        <p class="eyebrow">LIMITED TIME</p>
+        <h2>Up to <span>40% off</span><br>selected styles.</h2>
+        <p>Refresh your wardrobe with pieces made to last. Sale ends Sunday.</p>
+        <a href="shop.html?cat=sale" class="btn btn-light">Shop sale <span>→</span></a>
+      </div>
+      <div class="offer-art">
+        <div class="offer-circle">40<small>%</small><span>OFF</span></div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <p class="eyebrow">STAY IN THE LOOP</p>
+          <h2>Get 15% off your first order.</h2>
+          <p>Sign up for new drops, exclusive offers and style inspiration.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-dark">Join NOVA</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">NOVA<span>.</span></a>
+        <p>Modern essentials for the way you live, move and create.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="TikTok">tk</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#new">New arrivals</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#sale">Sale</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Shipping & delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Size guide</a>
+        <a href="#">Contact us</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>About</h4>
+        <a href="#">Our story</a>
+        <a href="#">Journal</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Stores</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 NOVA. All rights reserved.</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
